@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: imranreddypalle/flm-oct:db
+    image: imranreddypalle.db-app:database
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: imranreddypalle/flm-oct:javaapp
+    image: imranreddypalle/dev-app:javaapp
     ports:
       - "1111:8080"
     deploy:
